@@ -12,7 +12,6 @@ function SolarSystem() {
             Planets.map(({ name, image }) => (
               <PlanetCard
                 key={ name }
-                data-testid="cards-list"
                 planetName={ name }
                 planetImage={ image }
               />

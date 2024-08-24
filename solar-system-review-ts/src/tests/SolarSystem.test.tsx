@@ -1,15 +1,11 @@
 import { render, screen } from "@testing-library/react"
 import App from "../App";
-import SolarSystem from "../components/SolarSystem";
+import { renderSolarSystem } from "../utils";
 
 import venusImg from '../images/Venus.png';
 
 describe('Testes do componente "SolarSystem"', () => {
   const PLANET_NAME = 'Mercúrio';
-
-  const renderSolarSystem = () => {
-    render(<SolarSystem />)
-  }
 
   test('renderiza o componente com data-testid="solar-system"', () => {
     render(<App />)
