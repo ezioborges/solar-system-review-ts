@@ -1,9 +1,10 @@
 import { render, screen } from "@testing-library/react"
-import Header from "../components/Header"
+import App from "../App"
 
 describe('Testando o componente Header', () => {
   test('se o componente Header, segue o padrão solicitado', () => {
-    render(<Header />)
+    // para verificar se o componente Header está sendo chamado em "App.tsx"
+    render(<App />)
 
     const header = screen.getByRole('banner');
     const h1 = screen.getByRole('heading', { level: 1 });
