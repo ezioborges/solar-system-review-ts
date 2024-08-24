@@ -1,7 +1,9 @@
+import Title from "../Title";
+
 function SolarSystem() {
   return (
     <div data-testid="solar-system">
-        {/*Aqui vai conteúdo*/}
+        <Title>Planetas</Title>
     </div>
   );
 }
