@@ -1,10 +1,42 @@
 import { render, screen } from "@testing-library/react"
 import App from "../App";
+import SolarSystem from "../components/SolarSystem";
 
-test('Testando o componente "SolarSystem"', () => {
-  render(<App />)
+import venusImg from '../images/Venus.png';
 
-  const div = screen.getByTestId('solar-system');
+describe('Testes do componente "SolarSystem"', () => {
+  const PLANET_NAME = 'Mercúrio';
 
-  expect(div).toBeInTheDocument();
-})
+  const renderSolarSystem = () => {
+    render(<SolarSystem />)
+  }
+
+  test('renderiza o componente com data-testid="solar-system"', () => {
+    render(<App />)
+  
+    const div = screen.getByTestId('solar-system');
+  
+    expect(div).toBeInTheDocument();
+  });
+
+  test('se a lista de planetas é renderizada', () => {
+    renderSolarSystem();
+
+    const planetMercurio = screen.getByText(PLANET_NAME);
+    const planetImg = screen.getAllByRole('img')
+    const planetsList = screen.getByRole('list')
+    const listTestId = screen.getByTestId('planets-list')
+    const cardsTestId = screen.getAllByTestId('planet-card')
+
+    expect(planetMercurio).toBeInTheDocument();
+    
+    expect(planetImg).toHaveLength(8);
+    expect(planetImg[1]).toHaveAttribute('src', venusImg)
+    
+    expect(planetsList).toBeInTheDocument();
+    
+    expect(listTestId).toBeInTheDocument();
+    
+    expect(cardsTestId).toHaveLength(8);
+  });
+});
