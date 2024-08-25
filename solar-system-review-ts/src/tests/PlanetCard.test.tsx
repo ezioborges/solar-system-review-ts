@@ -8,7 +8,7 @@ describe('Testando o componente "PlanetCard"', () => {
   const PLANET_NAME = 'Vênus';
   
   test('O componente é renderizado com data-testid="planet-card"', () => {
-    renderPlanetCard(PLANET_NAME, MercurioImg);
+    renderPlanetCard();
     const divPlanetCard = screen.getByTestId('planet-card');
 
     expect(divPlanetCard).toBeInTheDocument();
