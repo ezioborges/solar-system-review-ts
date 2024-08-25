@@ -5,14 +5,6 @@ import MercurioImg from '../images/Mercurio.png';
 import Missions from '../components/Missions';
 import MissionCard from '../components/MissionCard';
 
-
-type MissionCardProp = {
-  name?: string,
-  year?: string,
-  country?: string,
-  destination?: string
-};
-
 export const renderSolarSystem = () => render(<SolarSystem />);
 export const renderMissions = () => render(<Missions />)
 
@@ -28,7 +20,12 @@ export const renderPlanetCard = (name?: string, imgUrl?: string) => {
 };
 
 
-export const renderMissionsCard = ({ name, year, country, destination }: MissionCardProp) => {
+export const renderMissionsCard = (
+  name?: string,
+  year?: string,
+  country?: string,
+  destination?: string
+  ) => {
   const missionName = name;
   const missionYear = year;
   const missionCountry = country;

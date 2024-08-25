@@ -3,7 +3,7 @@ import { renderMissionsCard } from "../utils";
 
 describe('Testa o componente "MissionsCard"', () => {
     test('Se o componente é renderizado', () => {
-        renderMissionsCard({});
+        renderMissionsCard();
         
 
         const div = screen.getByTestId('mission-card');
@@ -12,7 +12,7 @@ describe('Testa o componente "MissionsCard"', () => {
     });
     
     test('Se contem uma tag p com o data-testid="mission-name"', () => {
-        renderMissionsCard({});
+        renderMissionsCard();
         
         const p = screen.getByTestId('mission-name');
         const name = screen.getByText('Mariner 2');
@@ -22,7 +22,7 @@ describe('Testa o componente "MissionsCard"', () => {
     });
 
     test('Se contem uma tag p com o data-testid="mission-year"', () => {
-        renderMissionsCard({});
+        renderMissionsCard();
         
         const p = screen.getByTestId('mission-year');
         const year = screen.getByText('1962');
@@ -32,20 +32,40 @@ describe('Testa o componente "MissionsCard"', () => {
     });
 
     test('Se contem uma tag p com o data-testid="mission-country"', () => {
-        renderMissionsCard({});
+        const missionName = 'Venera 4';
+        const missionYear = '1967';
+        const missionCountry = 'URSS';
+        const missionDestination = 'Vênus'
+
+        renderMissionsCard(
+            missionName,
+            missionYear,
+            missionCountry,
+            missionDestination
+        );
         
         const p = screen.getByTestId('mission-country');
-        const country = screen.getByText('Estados Unidos');
+        const country = screen.getByText(missionCountry);
         
         expect(p).toBeInTheDocument();
         expect(country).toBeInTheDocument();
     });
 
     test('Se contem uma tag p com o data-testid="mission-destination"', () => {
-        renderMissionsCard({});
+        const missionName = 'Apollo 11';
+        const missionYear = '1969';
+        const missionCountry = 'Estados Unidos';
+        const missionDestination = 'Lua';
+
+        renderMissionsCard(
+            missionName,
+            missionYear,
+            missionCountry,
+            missionDestination
+        );
         
         const p = screen.getByTestId('mission-destination');
-        const destination = screen.getByText('Vênus');
+        const destination = screen.getByText('Lua');
         
         expect(p).toBeInTheDocument();
         expect(destination).toBeInTheDocument();
