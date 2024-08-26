@@ -1,0 +1,10 @@
+.missions {
+    position: static;
+    border: 1px solid #FFFFFF;
+    width: 1098px;
+    height: 2276px;
+    margin-top: 250px;
+    align-self: center;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
