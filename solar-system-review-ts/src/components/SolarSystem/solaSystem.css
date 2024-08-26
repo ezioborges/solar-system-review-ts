@@ -1,0 +1,24 @@
+.planet-content {
+    align-items: baseline;
+    height: 305.54px;
+    margin-top: 15px;
+    top: 444px;
+    width: 1284px; 
+}
+
+.planets-direction {
+    display: flex;
+    position: absolute;
+}
+
+.line {
+    position: relative;
+    width: 1284px;
+    height: 0;
+    top: 122.5px;
+    border: 1px solid #fff;
+}
+
+.list-content {
+    height: 100%;
+}

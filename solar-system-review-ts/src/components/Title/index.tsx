@@ -1,10 +1,18 @@
+import './title.css';
+
 type TitleProp = {
   children: React.ReactNode,
 }
 
 function Title({ children }: TitleProp) {
   return (
-    <h2>{ children }</h2>
+    <div className='title-content'>
+      <h2
+        className="title"
+      >
+        {children}
+      </h2>
+    </div>
   );
 };
 

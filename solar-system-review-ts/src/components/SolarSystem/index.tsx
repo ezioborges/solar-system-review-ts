@@ -1,23 +1,28 @@
 import PlanetCard from "../PlanetCard";
 import Title from "../Title";
-
 import Planets from "../../data/planets";
+
+import './solaSystem.css';
 
 function SolarSystem() {
   return (
-    <div data-testid="solar-system">
-        <Title>Planetas</Title>
-        <ul data-testid="planets-list">
-          {
-            Planets.map(({ name, image }) => (
+    <div data-testid="solar-system" className="planet-content">
+      <Title>Planetas</Title>
+      <div className="list-content">
+          <div className="line"></div>
+          <ul
+            className="planets-direction"
+            data-testid="planets-list"
+          >
+            {Planets.map(({ name, image }) => (
               <PlanetCard
                 key={ name }
                 planetName={ name }
                 planetImage={ image }
               />
-            ))
-          }
-        </ul>
+            ))}
+          </ul>
+        </div>
     </div>
   );
 }
