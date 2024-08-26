@@ -1,0 +1,66 @@
+p {
+    color: yellow;
+    width: 52px;
+    height: 44px;
+    font-size: 18px;
+}
+
+.mission-card {
+    border: 1px solid yellow;
+    border-radius: 17px;
+    height: 220px;
+    left: 134px;
+    top: 1036px;
+    width: 496px;
+}
+
+.mission-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    ;
+}
+
+.mission-card > p {
+    display: flex;
+    align-items: center;
+    color: yellow;
+    font-weight: 500;
+}
+
+.mission-card {
+    color: #fff;
+}
+
+.mission-name {
+    width: 451px;
+    height: 54px;
+    padding-left: 25px;
+    font-size: 28px;
+    color: yellow;
+}
+
+.footer-mission-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.icons {
+    color: yellow;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.adjust-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.adjust-icons > span {
+    color: yellow;
+}
+ 
+.line-mission-card {
+    border: 1px solid yellow;
+}

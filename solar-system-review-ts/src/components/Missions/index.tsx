@@ -13,19 +13,22 @@ function Missions() {
             <div className="title">
                 <Title>Missões</Title>
             </div>
-            <ul>
-                {
-                    missions.map(({name, year, country, destination}) => (
-                        <MissionCard
-                            key={name}
-                            name={name}
-                            year={year}
-                            country={country}
-                            destination={destination}
-                        />
-                    ))
-                }
-            </ul>
+                <ul className="mission-list">
+                    {
+                        missions.map(({ name, year, country, destination }) => (
+                            <li
+                                key={name}
+                            >
+                                <MissionCard
+                                    name={name}
+                                    year={year}
+                                    country={country}
+                                    destination={destination}
+                                />
+                            </li>
+                        ))
+                    }
+                </ul>
       </div>
     );
 };

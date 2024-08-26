@@ -1,10 +1,30 @@
 .missions {
-    position: static;
-    border: 1px solid #FFFFFF;
-    width: 1098px;
-    height: 2276px;
-    margin-top: 250px;
-    align-self: center;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 91px;
+  margin-top: 350px;
+  padding: 25px;
+  top: 899px;
+  width: 1098px;
+}
+
+.mission-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os items se quebrem em novas linhas */
+  gap: 10px; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mission-list li {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box; 
+  flex: 1 1 calc(50% - 10px); /* Faz com que cada item ocupe 50% da largura */
+  padding: 10px;
 }

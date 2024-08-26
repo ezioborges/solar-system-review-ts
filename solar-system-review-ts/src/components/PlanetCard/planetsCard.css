@@ -9,7 +9,7 @@
 }
 
 .planet-name-content {
-    width: 100%;
+    align-self: center;
     order: 2;
 }
 
