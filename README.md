@@ -28,7 +28,7 @@
 
  <details>
    <summary>
-     <strong>1. Colar e rodar o Projeto:
+     <strong>1. Clonar e rodar o Projeto:
    </summary> 
  
  
