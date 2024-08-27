@@ -13,7 +13,6 @@ type MissionCardProps = {
 } 
 
 function MissionCard({name, year, country, destination} : MissionCardProps) {
-    // console.log('missions ---> ', missions);
     
     return (
       <div
