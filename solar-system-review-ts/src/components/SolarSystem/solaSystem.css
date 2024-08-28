@@ -11,11 +11,11 @@
 }
 
 .line {
-    position: relative;
-    width: 1284px;
-    height: 0;
-    top: 122.5px;
     border: 1px solid #fff;
+    height: 0;
+    position: relative;
+    top: 122.5px;
+    width: 1284px;
 }
 
 .list-content {

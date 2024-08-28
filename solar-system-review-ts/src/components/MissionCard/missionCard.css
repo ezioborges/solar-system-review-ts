@@ -1,8 +1,8 @@
 p {
     color: yellow;
-    width: 52px;
-    height: 44px;
     font-size: 18px;
+    height: 44px;
+    width: 52px;
 }
 
 .mission-card {
@@ -16,13 +16,12 @@ p {
 
 .mission-card:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    ;
 }
 
 .mission-card > p {
-    display: flex;
     align-items: center;
     color: yellow;
+    display: flex;
     font-weight: 500;
 }
 
@@ -31,29 +30,29 @@ p {
 }
 
 .mission-name {
-    width: 451px;
+    color: yellow;
+    font-size: 28px;
     height: 54px;
     padding-left: 25px;
-    font-size: 28px;
-    color: yellow;
+    width: 451px;
 }
 
 .footer-mission-card {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    display: flex;
     height: 70px;
+    justify-content: space-around;
 }
 
 .icons {
     color: yellow;
-    margin-right: 10px;
     font-size: 30px;
+    margin-right: 10px;
 }
 
 .adjust-icons {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
 }   
 

@@ -22,9 +22,9 @@
 }
 
 .mission-list li {
-  display: flex;
-  justify-content: center;
   box-sizing: border-box; 
+  display: flex;
   flex: 1 1 calc(50% - 10px); /* Faz com que cada item ocupe 50% da largura */
+  justify-content: center;
   padding: 10px;
 }
