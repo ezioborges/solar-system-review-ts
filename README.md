@@ -31,11 +31,12 @@
      <strong>1. Clonar e rodar o Projeto:
    </summary> 
  
- 
-    - `git clone git@github.com:ezioborges/solar-system-review-ts.git`
-    - `cd solar-system-review-ts/solar-system-review-ts`
-    - `npm install` *OBs: A versão node utilizada para o projeto é a 16.*
-    - `npm run dev`
+ ```
+  git clone git@github.com:ezioborges/solar-system-review-ts.git
+  cd solar-system-review-ts/solar-system-review-ts
+  npm install
+  npm run dev
+```
 
  </details>
 
